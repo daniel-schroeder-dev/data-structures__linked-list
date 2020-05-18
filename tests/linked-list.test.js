@@ -220,8 +220,9 @@ describe('LinkedList.clear()', () => {
 		expect(linkedList.size).toEqual(0);
 	});
 
-	xtest('should have head null', () => {
-		
+	test('should have null value for head attribute', () => {
+		linkedList.clear();
+		expect(linkedList.head).toBeNull();
 	});
 
 });
