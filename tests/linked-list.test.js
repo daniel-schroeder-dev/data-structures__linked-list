@@ -206,6 +206,26 @@ describe('LinkedList.removeNodeAt()', () => {
 
 });
 
+describe('LinkedList.clear()', () => {
+	
+	beforeEach(() => {
+		linkedList = new LinkedList();
+		linkedList.insertFirstNode('foo');
+		linkedList.insertLastNode('bar');
+		linkedList.insertLastNode('baz');	
+	});
+
+	test('should have size 0', () => {
+		linkedList.clear();
+		expect(linkedList.size).toEqual(0);
+	});
+
+	xtest('should have head null', () => {
+		
+	});
+
+});
+
 
 
 
