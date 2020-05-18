@@ -2,7 +2,13 @@ const Node = require('./node.js');
 const IndexOutOfBoundsError = require('./index-out-of-bounds-error.js');
 
 class LinkedList {
+	
 	constructor() {
+		this.head = null;
+		this.size = 0;
+	}
+
+	clear() {
 		this.head = null;
 		this.size = 0;
 	}
